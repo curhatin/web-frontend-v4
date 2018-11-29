@@ -7,16 +7,43 @@ import { fetchDataPostUserById } from "../../../actions/postActions";
 import timeAgo from "time-ago";
 import { Link } from "react-router-dom";
 import { fetchDataCommentsByPostId } from "../../../actions/commentsActions";
+import axios from 'axios'
 
 class PstoryDetail extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      comments: ''
+    };
   }
   componentDidMount() {
     console.log('kebuka')
     this.props.fetchDataPostUserById(localStorage.token, this.props.id);
   }
+
+  handleOnChange = e => {
+    this.setState({
+        [e.target.name] : e.target.value
+    })
+
+  }
+
+  submitHandleComment = () => {
+    axios.post("https://curhatin.herokuapp.com/comment/add", {
+            postId: this.props.id,
+            comments: this.state.comments,
+
+        }, {
+            headers: {
+                authorization: `Bearer ${localStorage.token}`
+            }
+        })
+        .then(res => {
+          window.location.reload() 
+            alert('insert data sukses!!')
+        })
+        .catch(err => console.log(err))
+}
   render() {
     console.log(this.props.post_by_post_id )
     return (
@@ -104,9 +131,9 @@ class PstoryDetail extends Component {
                       </div>
                     <div id="button-wrapper-2">
                       <div id="update-button-2">
-                        <button type="submit" className="btn-outline-success">
-                          Comment
-                        </button>
+                      <button onClick={this.submitHandleComment} type="submit" className="btn-outline-success">
+                            Comment
+                          </button>
                       </div>
                     </div>
                   </div>

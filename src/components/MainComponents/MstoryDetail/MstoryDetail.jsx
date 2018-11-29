@@ -45,7 +45,8 @@ class MstoryDetail extends Component {
               }
           })
           .then(res => {
-            this.props.history.push(`/MyStoryDetail/${res.data.data.comment.postId}`)
+            window.location.reload() 
+            alert('insert data sukses!!')
           })
           .catch(err => console.log(err))
   }
