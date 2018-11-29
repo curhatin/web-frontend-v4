@@ -7,11 +7,14 @@ import timeAgo from "time-ago";
 import { Link } from "react-router-dom";
 import { fetchDataCommentsByPostId } from "../../../actions/commentsActions";
 import { DeleteDataPostUserById } from "../../../actions/postActions";
+import axios from 'axios'
 
 class MstoryDetail extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+     comments: ''
+    };
   }
   componentDidMount() {
     this.props.fetchDataPostUserById(localStorage.token, this.props.id);
@@ -23,6 +26,30 @@ class MstoryDetail extends Component {
     this.props.DeleteDataPostUserById(localStorage.token, this.props.id);
     this.props.history.push("/Mystories");
   };
+
+  handleOnChange = e => {
+    this.setState({
+        [e.target.name] : e.target.value
+    })
+
+  }
+
+  submitHandleComment = () => {
+      axios.post("https://curhatin.herokuapp.com/comment/add", {
+              postId: this.props.id,
+              comments: this.state.comments,
+
+          }, {
+              headers: {
+                  authorization: `Bearer ${localStorage.token}`
+              }
+          })
+          .then(res => {
+            this.props.history.push(`/MyStoryDetail/${res.data.data.comment.postId}`)
+          })
+          .catch(err => console.log(err))
+  }
+
   render() {
     return (
       <div>
@@ -126,11 +153,12 @@ class MstoryDetail extends Component {
                           cols="53"
                           placeholder="your suggestion or advice"
                           class="comment-text-box"
+                          name="comments" value={this.state.comments} onChange={this.handleOnChange}
                         />
                       </div>
                       <div id="button-wrapper-2">
                         <div id="update-button-2">
-                          <button type="submit" className="btn-outline-success">
+                          <button onClick={this.submitHandleComment} type="submit" className="btn-outline-success">
                             Comment
                           </button>
                         </div>
