@@ -1,0 +1,91 @@
+html {
+    margin: 0
+}
+
+#login {
+    background-image: url(../../../Images/006.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 821px;
+}
+
+#login .container-login {
+    background: rgba(63, 77, 102, 0.7);
+    height: 821px;
+}
+
+#login-right{
+    background: rgba(0,0,0,0.4);
+    width: 945px;
+    height: 821px;
+}
+
+#login-right a p{
+    font-size: 15px;
+    padding-left: 800px;
+    padding-top: 20px;
+    text-decoration: none;
+}
+
+#login-right h4 {
+    font-size: 50px;
+    padding-left: 150px;
+    padding-top: 100px;
+    color: #f4c613;
+    letter-spacing: 3px;
+}
+
+#login-right p{
+    font-size: 20px;
+    padding-left: 150px;
+    margin-bottom: 50px;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+
+#login-form input.form-control {
+    font-family: "Open Sans", sans-serif;
+    padding: 10px 15px;
+    font-size: 12px;
+    line-height: 24px;
+    width: 52%;
+    Margin-left: 150px;
+    min-height: 50px;
+}
+
+#login-btn button.btn-outline-secondary{
+    padding: 10px 40px;
+    margin-left: 150px;
+    border: 3px solid #f4c613;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #f4c613;
+    
+}
+
+#login-btn button.btn-outline-secondary:hover,
+#login-btn button.btn-outline-secondary:focus{
+    border-color: 000;
+    color:#f4c613;
+    border-radius: 20px;
+    font-size: 15px
+    
+}
+
+#login-register-box{
+    margin-top: 150px;
+    margin-left: 1px;
+    display: flex;
+}
+
+#login-register-btn button.btn-outline-secondary{
+    padding: 5px 20px;
+    border: 3px solid #f4c613;
+    border-radius: 40px;
+    font-size: 15px;
+    color: #f4c613;
+    margin-left: 15px;
+}
+

@@ -1,0 +1,62 @@
+#contact {
+    background-color: #3F4D66;
+    background-position: center;
+    height: 400px;
+}
+
+#contact-info {
+    margin-left: 30px;
+}
+
+#contact-info h4 {
+    color: #EF5350;
+    font-size: 50px;
+    margin-top: 120px
+}
+
+#contact-info p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+    word-spacing: 3px;
+}
+
+#contact-connect {
+    margin-left: 30px;
+}
+
+#contact-connect h4 {
+    color: #f4c613;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 70px;
+}
+
+#contact-connect p {
+    color:#fff;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+#contact-update {
+    margin-left: 30px;
+}
+
+#contact-update h4 {
+    color: #f4c613;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 70px;
+}
+
+#contact-update p {
+    color:#fff;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+#update-icons a .update-icon {
+    padding-right:10px;
+    color: #f4c613;
+
+}

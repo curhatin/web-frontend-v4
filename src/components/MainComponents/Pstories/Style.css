@@ -1,0 +1,66 @@
+#peoplestories {
+    background: #fff;
+    height: 600px;
+}
+
+#comment-boxes {
+    max-height: 800px;
+    max-width: 800px;
+    position: relative;
+    margin-top: 20px;
+}
+
+#comment-wrapper {
+    margin-top: 15px;
+}
+
+#comment-box {
+    width: 800px;
+}
+
+
+#comment-notif {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#comment-notif p {
+    font-size: 11px;
+    border: 1px solid #f4c613;
+    border-radius: 20px;
+    padding: 7px;
+    margin-left: 10px;
+}
+
+#comment-title a h5 {
+    color: #000;
+}
+
+
+#comment-title a p:hover,
+#comment-title a p:focus {
+    color: #EF5350;
+}
+
+#topic-box {
+    margin-top: 23px;
+    margin-left: 50px;
+}
+
+#topic-catageries {
+    padding-top: 20px;
+}
+
+.topic-category a p {
+    color: #000;
+}
+
+.topic-category a p:hover,
+{
+    color: #EF5350;
+}
+
+hr {
+    color: #EF5350
+}
+

@@ -1,0 +1,44 @@
+usernavbar {
+    z-index: 2;
+    position: fixed;
+}
+.user-nav-top {
+    background: #fff;
+    padding: 10px 100px;
+} 
+
+.user-nav-top ul.nav > li a {
+    font-family: "Raleway", sans-serif;
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.user-nav-top ul.nav > li a:hover,
+.user-nav-top ul.nav > li a:hover {
+    color: #EF5350;
+}
+
+
+
+#search-input input.form-control {
+    font-family: "Open Sans", sans-serif;
+    padding: 5px 15px;
+    font-size: 12px;
+    line-height: 15px;
+    width: 128%;
+    Margin-left: 2px;
+    min-height: 30px;
+    border: 3px solid #3F4D66;
+    border-radius: 10px;
+    margin-top: 5px; 
+    background-color: #fff2d3;
+}
+
+#search-input input.form-control:focus {
+    background-color: #fff;
+}
+
+

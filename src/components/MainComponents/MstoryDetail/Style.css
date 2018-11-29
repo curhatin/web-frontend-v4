@@ -1,0 +1,53 @@
+#button-wrapper {
+    margin-left: 10px;
+
+}
+#button-wrapper #update-button {
+    display: inline-block;
+    padding: 5px;
+
+}
+
+#update-button .btn-outline-success {
+    border-radius: 5px;
+    padding: 5px 20px;
+    border-color: #3F4D66;
+    color: #3F4D66;
+}
+
+#update-button .btn-outline-success:hover,
+#update-button .btn-outline-success:focus
+ {
+    border-color: #EF5350;
+    color: #f4c613;
+    background-color: #EF5350;
+
+}
+
+#button-wrapper-2 {
+    margin-left: 705px;
+    margin-bottom: 50px;
+
+}
+#button-wrapper-2 #update-button {
+    display: inline-block;
+    padding: 5px;
+
+}
+
+#update-button-2 .btn-outline-success {
+    border-radius: 5px;
+    padding: 5px 20px;
+    border-color: #3F4D66;
+    color: #3F4D66;
+
+}
+
+#update-button-2 .btn-outline-success:hover,
+#update-button-2 .btn-outline-success:focus
+ {
+    border-color: #EF5350;
+    color: #f4c613;
+    background-color: #EF5350;
+
+}

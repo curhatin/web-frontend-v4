@@ -1,0 +1,65 @@
+#stories-content textarea {
+    width: 200%;
+    height: 350px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+#create-boxes {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+#create-wrapper {
+    margin-top: 15px;
+    padding-left: 40px;
+}
+
+#comment-title input.form-control {
+    font-family: "Open Sans", sans-serif;
+    padding: 10px 15px;
+    font-size: 12px;
+    line-height: 24px;
+    width: 150%;
+    min-height: 50px;
+
+}
+
+
+#tags-submit {
+    position: relative;
+    left: 50px;
+}
+
+#create-catagories {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+}
+
+#create-catagories a p {
+    font-size: 11px;
+    border: 1px solid #f4c613;
+    border-radius: 20px;
+    padding: 7px;
+    margin-left: 10px;
+    color: #EF5350
+}
+
+#create-button {
+    margin-top: 25px;
+    left: 90px;
+    
+}
+
+#create-button .btn-outline-success {
+    border-radius: 5px;
+    padding: 5px 20px;
+    border-color: #3F4D66;
+    color: #3F4D66;
+}
+

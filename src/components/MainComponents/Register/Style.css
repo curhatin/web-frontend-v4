@@ -1,0 +1,30 @@
+#register-right{
+    background: rgba(0,0,0,0.4);
+    width: 945px;
+    height: 821px;
+}
+
+#register-right a p{
+    font-size: 15px;
+    padding-left: 800px;
+    padding-top: 20px;
+    text-decoration: none;
+}
+
+#register-right h4 {
+    font-size: 50px;
+    padding-left: 150px;
+    padding-top: 100px;
+    color: #f4c613;
+    letter-spacing: 3px;
+}
+
+#register-right p{
+    font-size: 35px;
+    padding-left: 150px;
+    margin-bottom: 50px;
+    word-spacing: 3px;
+    color: #fff;
+    letter-spacing: 5px;
+}
+

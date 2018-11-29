@@ -1,0 +1,21 @@
+#comment-content textarea {
+    width: 600px;
+    height: 500px;
+    margin-left: 215px;
+    padding: 10px;
+}
+
+#send-comment-button {
+    margin-top: 25px;
+    left: 90px;
+    margin-left: 735px;
+    margin-bottom: 40px;
+    
+}
+
+#send-comment-button .btn-outline-success {
+    border-radius: 5px;
+    padding: 5px 20px;
+    border-color: #3F4D66;
+    color: #3F4D66;
+}

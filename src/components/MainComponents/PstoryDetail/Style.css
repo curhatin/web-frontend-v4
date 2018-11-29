@@ -1,0 +1,18 @@
+#other-comment-box {
+    width: 500px;
+    margin-left: 320px;
+}
+
+#comment-button {
+    margin-top: 25px;
+    left: 90px;
+    margin-left: 700px;
+    
+}
+
+#comment-button .btn-outline-success {
+    border-radius: 5px;
+    padding: 5px 20px;
+    border-color: #3F4D66;
+    color: #3F4D66;
+}
