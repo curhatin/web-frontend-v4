@@ -16,8 +16,8 @@ const About = () => {
                   <p>
                     {" "}
                     We help people to advice each other <br />
-                    thi web app allow you to share and get advice <br />
-                    from people that you don't know who they are
+                    this web app allow you to share and get advice <br />
+                    from people that you don't know.
                   </p>
                 </div>
 

@@ -54,7 +54,7 @@ class MstoryDetail extends Component {
     return (
       <div>
         <div id="peoplestories">
-          <div id="box-lg">
+          <div id="box-lg-1">
             <div className="container">
               <div className="row">
                 <div className="col-md-10">
@@ -167,47 +167,6 @@ class MstoryDetail extends Component {
                   </div>
                 </div>
                 <div className="col-md-2">
-                  <div id="topic-box">
-                    <div>
-                      <h6 className="text-center">
-                        {" "}
-                        <strong>TOPICS</strong>
-                      </h6>
-                      <hr />
-                    </div>
-                    <div id="topic-catagories">
-                      <div className="topic-category">
-                        <a href="#">
-                          <p>EDUCATION</p>
-                        </a>
-                      </div>
-                      <div className="topic-category">
-                        <a href="#">
-                          <p>SEX</p>
-                        </a>
-                      </div>
-                      <div className="topic-category">
-                        <a href="#">
-                          <p>SOCIAL LIFE</p>
-                        </a>
-                      </div>
-                      <div className="topic-category">
-                        <a href="#">
-                          <p>RELIGION</p>
-                        </a>
-                      </div>
-                      <div className="topic-category">
-                        <a href="#">
-                          <p>HEALTH</p>
-                        </a>
-                      </div>
-                      <div className="topic-category">
-                        <a href="#">
-                          <p>OTHERS</p>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

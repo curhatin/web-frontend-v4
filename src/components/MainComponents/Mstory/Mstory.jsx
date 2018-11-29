@@ -30,7 +30,7 @@ class Mstory extends Component {
   render() {
     return (
         <div id="peoplestories">
-          <div id="box-lg">
+          <div id="box-lg-1">
             <div className="container">
               <div className="row">
               { this.props.post_list_by_id && this.props.post_list_by_id.map((postData,index)=> (

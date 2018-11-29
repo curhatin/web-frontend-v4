@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../UserNavbar/Style.css";
 import {Link} from 'react-router-dom'
-import Logo from "../../../logo/LogoYellow.png";
 
 class UserNavbar extends Component {
   constructor(props) {
@@ -16,11 +15,18 @@ class UserNavbar extends Component {
           <div className='user-nav-top'>
             <div id='main-nav' className="container-fluid">
               <div className="row navbar">
-                <div className="col-md-2 text-right">
-                </div>
+                <div className="col-md-12">
+                <div id='user-navbar-wrapper'>
+                <div id="form-search">
+                            <input
+                              type="text"
+                              className="form-control"
+                              id="name"
+                              placeholder="Search ..... "
+                            />
+                          </div>
 
-                <div className="col-md-8">
-                  <ul className="nav justify-content-end">
+                  <ul className="nav">
                     <li className="nav-item">
                       <Link to="/PeopleStories" className="nav-link active" >
                         People stories
@@ -38,16 +44,6 @@ class UserNavbar extends Component {
                     </li>
                   </ul>
                 </div>
-
-                <div id="search-input" className="col-md-2">
-                <div class="form-group">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="name"
-                              placeholder="Search ..... "
-                            />
-                          </div>
                 </div>
               </div>
             </div>

@@ -14,7 +14,7 @@ const Header = () => {
 
                 <div id="header-statement" className="text-left">
                   <h2>start sharing</h2>
-                  <h3> No matter your problem, don't keep for yourself</h3>
+                  <h3> No matter your problem, tell us now!</h3>
                 </div>
                 
                 <Link to="Share">

@@ -22,7 +22,7 @@ const Contact = () => {
                     We help you to release the stress and <br />
                     get proper advice. don’t be hesitate <br />
                     your identity won't be recognized, <br />
-                    be relax and share your problem{" "}
+                    be relax and share your problem!{" "}
                   </p>
                 </div>
               </div>

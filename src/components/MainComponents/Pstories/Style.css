@@ -1,3 +1,5 @@
+
+
 #peoplestories {
     background: #fff;
     height: 600px;
@@ -7,7 +9,7 @@
     max-height: 800px;
     max-width: 800px;
     position: relative;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 #comment-wrapper {
@@ -16,6 +18,10 @@
 
 #comment-box {
     width: 800px;
+}
+
+strong {
+    color: #000;
 }
 
 
@@ -28,14 +34,13 @@
     font-size: 11px;
     border: 1px solid #f4c613;
     border-radius: 20px;
-    padding: 7px;
+    padding: 10px;
     margin-left: 10px;
 }
 
-#comment-title a h5 {
+#comment-title h5 {
     color: #000;
 }
-
 
 #comment-title a p:hover,
 #comment-title a p:focus {
@@ -45,7 +50,9 @@
 #topic-box {
     margin-top: 23px;
     margin-left: 50px;
+    height: 30px;
 }
+
 
 #topic-catageries {
     padding-top: 20px;

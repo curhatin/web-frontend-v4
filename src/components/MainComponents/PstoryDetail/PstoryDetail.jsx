@@ -72,19 +72,6 @@ class PstoryDetail extends Component {
                         <hr />
                       </div>
                     </div>
-                    <div id="button-wrapper">
-                      <div id="update-button">
-                        <button type="submit" className="btn-outline-success">
-                          Update
-                        </button>
-                      </div>
-                      <div id="update-button">
-                        <button type="submit" className="btn-outline-success">
-                          Delete
-                        </button>
-                      </div>
-                    </div>
-
                     {this.props.post_by_post_id &&
                       this.props.post_by_post_id[`posts-comments`].map(
                         (commentData, index) => (
@@ -106,7 +93,15 @@ class PstoryDetail extends Component {
                           </div>
                         )
                       )}
-
+                    <div id="create-comment-box">
+                        <textarea
+                          rows="5"
+                          cols="53"
+                          placeholder="your suggestion or advice"
+                          class="comment-text-box"
+                          name="comments" value={this.state.comments} onChange={this.handleOnChange}
+                        />
+                      </div>
                     <div id="button-wrapper-2">
                       <div id="update-button-2">
                         <button type="submit" className="btn-outline-success">
