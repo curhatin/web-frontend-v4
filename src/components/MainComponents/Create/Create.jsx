@@ -25,6 +25,7 @@ handleClick = id => {
   this.setState({
     tagId: id
   })
+  
 }
 
 handleSubmit = async () => {
@@ -35,7 +36,7 @@ handleSubmit = async () => {
       token: this.props.token
   })
   console.log(this.state.tagId)
-  //this.props.history.push("/Mystories");
+  this.props.history.push("/Mystories")
 }
   render() {
     return (

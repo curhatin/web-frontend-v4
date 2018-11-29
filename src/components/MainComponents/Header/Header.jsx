@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Style.css";
+import {Link} from "react-router-dom"
 
 const Header = () => {
   return (
@@ -16,11 +17,14 @@ const Header = () => {
                   <h3> No matter your problem, don't keep for yourself</h3>
                 </div>
                 
+                <Link to="Share">
                 <div id="header-btn">
+                
                   <a className="btn btn-outline-secondary" href="#">
                     Click Here
                   </a>
                 </div>
+                </Link>
              
               </div>
             </div>

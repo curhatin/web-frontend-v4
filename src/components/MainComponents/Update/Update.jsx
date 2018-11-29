@@ -8,6 +8,7 @@ class Update extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      tagId: '',
       topic: "",
       post: ""
     };
@@ -24,6 +25,7 @@ class Update extends Component {
   UpdateDataHandle = () => {
     this.props.updatePostById({
       id: this.props.id,
+      tagId: this.props.tagId,
       post: this.state.post,
       topic: this.state.topic,
       token: localStorage.token
@@ -70,26 +72,26 @@ class Update extends Component {
                             </div>
                           </div>
                           <div className="col-md-10">
-                            <div id="create-catagories">
-                              <a href="#">
-                                <p> Education</p>
-                              </a>
-                              <a href="#">
-                                <p> Sex </p>
-                              </a>
-                              <a href="#">
-                                <p> Social life </p>
-                              </a>
-                              <a href="#">
-                                <p> Religion </p>
-                              </a>
-                              <a href="#">
-                                <p> Health </p>
-                              </a>
-                              <a href="#">
-                                <p> Others </p>
-                              </a>
-                            </div>
+                          <div id="create-catagories">
+                                <a  href="#" onClick={() => this.UpdateDataHandle(1)}>
+                                  <p  > Education</p>
+                                </a>
+                                <a  href="#" onClick={() => this.UpdateDataHandle(2)}>
+                                  <p> Sex </p>
+                                </a>
+                                <a   href="#" onClick={() => this.UpdateDataHandle(3)}>
+                                  <p> Social life </p>
+                                </a>
+                                <a  href="#" onClick={() => this.UpdateDataHandle(4)}>
+                                  <p> Religion </p>
+                                </a>
+                                <a href="#" onClick={() => this.UpdateDataHandle(5)}>
+                                  <p> Health </p>
+                                </a>
+                                <a href="#" onClick={() => this.UpdateDataHandle(6)}>
+                                  <p> Others </p>
+                                </a>
+                              </div>  
                           </div>
                         </div>
                       </div>
