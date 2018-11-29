@@ -6,7 +6,7 @@ import { fetchDataPostUserById } from "../../../actions/postActions";
 import timeAgo from "time-ago";
 import { Link } from "react-router-dom";
 import { fetchDataCommentsByPostId } from "../../../actions/commentsActions";
-import { DeleteDataPostUserById } from "../../../actions/postActions"
+import { DeleteDataPostUserById } from "../../../actions/postActions";
 
 class MstoryDetail extends Component {
   constructor(props) {
@@ -17,13 +17,12 @@ class MstoryDetail extends Component {
     this.props.fetchDataPostUserById(localStorage.token, this.props.id);
   }
   updateHandle = () => {
-
     this.props.history.push(`/UpdateStory/${this.props.id}`);
-  }
+  };
   deleteHandle = () => {
-    this.props.DeleteDataPostUserById(localStorage.token, this.props.id)
+    this.props.DeleteDataPostUserById(localStorage.token, this.props.id);
     this.props.history.push("/Mystories");
-  }
+  };
   render() {
     return (
       <div>
@@ -40,7 +39,8 @@ class MstoryDetail extends Component {
                             <p>
                               {" "}
                               {this.props.post_by_post_id &&
-                                this.props.post_by_post_id[`posts-comments`].length}{" "}
+                                this.props.post_by_post_id[`posts-comments`]
+                                  .length}{" "}
                               comments{" "}
                             </p>
                             <p>
@@ -80,12 +80,20 @@ class MstoryDetail extends Component {
                       </div>
                       <div id="button-wrapper">
                         <div id="update-button">
-                          <button onClick={this.updateHandle}  type="submit" className="btn-outline-success">
+                          <button
+                            onClick={this.updateHandle}
+                            type="submit"
+                            className="btn-outline-success"
+                          >
                             Update
                           </button>
                         </div>
                         <div id="update-button">
-                          <button onClick={this.deleteHandle} type="submit" className="btn-outline-success">
+                          <button
+                            onClick={this.deleteHandle}
+                            type="submit"
+                            className="btn-outline-success"
+                          >
                             Delete
                           </button>
                         </div>
@@ -112,7 +120,14 @@ class MstoryDetail extends Component {
                             </div>
                           )
                         )}
-
+                      <div id="create-comment-box">
+                        <textarea
+                          rows="5"
+                          cols="53"
+                          placeholder="your suggestion or advice"
+                          class="comment-text-box"
+                        />
+                      </div>
                       <div id="button-wrapper-2">
                         <div id="update-button-2">
                           <button type="submit" className="btn-outline-success">
@@ -185,5 +200,10 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  { login, fetchDataCommentsByPostId, fetchDataPostUserById, DeleteDataPostUserById }
+  {
+    login,
+    fetchDataCommentsByPostId,
+    fetchDataPostUserById,
+    DeleteDataPostUserById
+  }
 )(MstoryDetail);

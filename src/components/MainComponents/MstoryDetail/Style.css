@@ -51,3 +51,12 @@
     background-color: #EF5350;
 
 }
+#comment-text-box{
+    width : 25%;
+    height : 50px;
+}
+#create-comment-box{
+
+    margin-left: 320px;
+    border-color:red;
+}

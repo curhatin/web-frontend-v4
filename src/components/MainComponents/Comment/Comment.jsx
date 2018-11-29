@@ -68,6 +68,7 @@ class Comment extends Component {
                           placeholder="your suggestion or advice"
                         />
                       </div>
+                      
                       <div id="send-comment-button">
                         <button type="submit" className="btn-outline-success">
                           Send

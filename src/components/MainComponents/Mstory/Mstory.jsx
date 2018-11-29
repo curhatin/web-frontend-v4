@@ -58,6 +58,7 @@ class Mstory extends Component {
                             <hr />
                             <div id="comment-content">
                               <p>
+                              
                               {postData.post}
                               </p>
                             </div>
