@@ -35,7 +35,7 @@ handleSubmit = async () => {
       topic: this.state.topic,
       token: this.props.token
   })
-  console.log(this.state.tagId)
+  
   this.props.history.push("/Mystories")
 }
   render() {

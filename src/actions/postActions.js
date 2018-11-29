@@ -103,6 +103,7 @@ export const DeleteDataPostUserById = (token, id) => (dispatch) => {
 
 export const updatePostById = data => dispatch => {
     axios.put(`https://curhatin.herokuapp.com/post/${data.id}`, {
+            tagId: data.tagId,
             post: data.post,
             topic: data.topic
         }, {
