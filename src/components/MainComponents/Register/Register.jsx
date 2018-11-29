@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Style.css";
+import {Link} from "react-router-dom"
 import axios from 'axios'
 
 class Register extends Component {
@@ -42,9 +43,11 @@ onChange(e) {
                 <div className="col-md-8">
                   <div id="register-right">
                     <div id='login-form'>
+                    <Link to="/">
                       <a href='#'>
                         <p>HOME</p>
                       </a>
+                      </Link>
                       <h4>
                         {" "}
                         Get <span>STARTED</span>{" "} <br/>
@@ -83,7 +86,7 @@ onChange(e) {
                               onChange={this.onChange}
                               name="password"
                               placeholder="PASSWORD.."
-                              type="text"
+                              type="password"
                               class="form-control"
                             />
                           </div>
