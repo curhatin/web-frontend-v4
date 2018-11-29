@@ -28,7 +28,7 @@ class PeopleStories extends Component {
     
   }
   render() {
-    console.log(this.props.search_data)
+    
     this.renderRedirect()   
     return (
       <div>

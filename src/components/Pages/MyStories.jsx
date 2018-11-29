@@ -5,6 +5,8 @@ import Mstory from "../MainComponents/Mstory/Mstory";
 import {connect} from 'react-redux'
 import {login} from '../../actions/authActions'
 import {fetchDataPostById} from '../../actions/postActions'
+import {searchDataPost} from '../../actions/postActions'
+import MstorySearch from '../MainComponents/Mstory/MstorySearch'
 
 
 
@@ -26,13 +28,15 @@ class Mystories extends Component {
     
   }
   render() {
-    console.log(this.props.post_list_by_id)
+    
     this.renderRedirect()   
     return (
       <div>
         <Navbar/>
         <UserNavbar />
-          <Mstory />
+        { !this.props.search_data && <Mstory/>}
+            { this.props.search_data && <MstorySearch/>}
+
         
        
         
@@ -43,7 +47,8 @@ class Mystories extends Component {
 const mapStateToProps = state => ({
   isAuthenticated : state.auth.isAuthenticated,
   post_list_by_id : state.post.post_list_by_id,
-  token: state.auth.token
+  token: state.auth.token,
+  search_data : state.post.search_post_list
 })
 
-export default connect(mapStateToProps,{login,fetchDataPostById})(Mystories)
+export default connect(mapStateToProps,{login,fetchDataPostById,searchDataPost})(Mystories)

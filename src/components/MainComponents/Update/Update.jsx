@@ -9,8 +9,8 @@ class Update extends Component {
     super(props);
     this.state = {
       tagId: '',
-      topic: "",
-      post: ""
+      topic: this.props.topic || '',
+      post: this.props.post || '',
     };
   }
   
@@ -40,6 +40,7 @@ class Update extends Component {
   }
 
   render() {
+    console.log(this.props.topic)
     return (
       <div>
         <div id="box-lg">

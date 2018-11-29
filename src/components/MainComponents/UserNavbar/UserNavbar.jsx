@@ -23,6 +23,10 @@ class UserNavbar extends Component {
       token: this.props.token
     })
   }
+
+  loadPage = () => {
+    window.location.reload() 
+  }
   render() {
     return (
       <div>
@@ -45,17 +49,17 @@ class UserNavbar extends Component {
 
                   <ul className="nav">
                     <li className="nav-item">
-                      <Link to="/PeopleStories" className="nav-link active" >
+                      <Link to="/PeopleStories" onClick={this.loadPage}  className="nav-link active" >
                         People stories
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link  to="/Mystories" className="nav-link" href="#about">
+                      <Link  to="/Mystories"  className="nav-link" href="#about">
                         My Stories
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="/CreateStory" className="nav-link" href="#team">
+                      <Link to="/CreateStory"  className="nav-link" href="#team">
                         Create Story
                       </Link>
                     </li>

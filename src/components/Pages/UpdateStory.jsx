@@ -16,7 +16,7 @@ class UpdateStory extends Component {
             <div>
                 <Navbar />
                 <UserNavbar />
-                <Update id={this.props.match.params.id} history={this.props.history}/>
+                <Update id={this.props.match.params.id} history={this.props.history} topic={this.props.post_by_post_id && this.props.post_by_post_id.topic} post={this.props.post_by_post_id && this.props.post_by_post_id.post}/>
             </div>
          );
     }

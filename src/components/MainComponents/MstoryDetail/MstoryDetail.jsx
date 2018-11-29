@@ -20,6 +20,7 @@ class MstoryDetail extends Component {
     this.props.fetchDataPostUserById(localStorage.token, this.props.id);
   }
   updateHandle = () => {
+   
     this.props.history.push(`/UpdateStory/${this.props.id}`);
   };
   deleteHandle = () => {
