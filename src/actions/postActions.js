@@ -118,6 +118,7 @@ export const updatePostById = data => dispatch => {
                 type: UPDATE_POST_BY_ID,
                 payload: res.data
             })
+            window.location.reload() 
         })
         .catch(err => console.log(err))
 }
