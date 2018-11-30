@@ -46,7 +46,7 @@ class MstoryDetail extends Component {
               }
           })
           .then(res => {
-            window.location.reload() 
+            //window.location.reload() 
             alert('insert data sukses!!')
           })
           .catch(err => console.log(err))
