@@ -17,17 +17,26 @@
     color: #3F4D66;
 }
 
+#comment-content-reply {
+    height: auto;
+    padding: 20px;
+    background-color: #B3E5FC;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px #f4c613
+}
+
 
 #create-comment-box textarea {
     padding: 10px;
     margin-left: 0px;
     margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 5px;
     font-size: 13px;
     height: 200px;
     width: 500px;
-    border-color: #9E9E9E;
+    border: 2px solid #3F4D66 ;
+    box-shadow: 10px 10px #3F4D66;
 
 
 }

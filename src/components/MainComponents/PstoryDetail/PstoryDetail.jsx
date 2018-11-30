@@ -113,7 +113,7 @@ class PstoryDetail extends Component {
                               </div>
                             </div>
 
-                            <div id="comment-content">
+                            <div id="comment-content-reply">
                               <p>{commentData.comment.comments}</p>
                               <hr />
                             </div>

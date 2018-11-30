@@ -22,11 +22,18 @@
 #comment-title input.form-control {
     font-family: "Open Sans", sans-serif;
     padding: 10px 15px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 24px;
     width: 150%;
     min-height: 50px;
+    border: 2px solid #3F4D66;
+    box-shadow: 10px 10px #f4c613;
 
+}
+
+#stories-content textarea {
+    border: 2px solid #3F4D66;
+    box-shadow: 10px 10px #f4c613;
 }
 
 
@@ -43,11 +50,11 @@
 
 #create-catagories a p {
     font-size: 11px;
-    border: 1px solid #f4c613;
+    border: 1px solid red;
     border-radius: 20px;
     padding: 7px;
     margin-left: 10px;
-    color: #EF5350
+    color: #3F4D66
 }
 
 #create-button {
