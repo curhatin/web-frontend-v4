@@ -49,7 +49,7 @@ class UserNavbar extends Component {
 
                   <ul className="nav">
                     <li className="nav-item">
-                      <Link to="/PeopleStories" onClick={this.loadPage}  className="nav-link active" >
+                      <Link to="/PeopleStories"  className="nav-link active" >
                         People stories
                       </Link>
                     </li>
