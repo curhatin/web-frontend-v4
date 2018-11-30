@@ -40,3 +40,9 @@
 
 
 }
+
+.topic-categories a p {
+    color: yellow;
+    font-size: 15px;
+    font-weight: bold;
+}

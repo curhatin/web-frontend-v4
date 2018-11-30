@@ -179,6 +179,7 @@ class PstoryDetail extends Component {
                         <p>OTHERS</p>
                       </a>
                     </div>
+                    <hr/>
                   </div>
                 </div>
               </div>
